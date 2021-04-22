@@ -1,10 +1,17 @@
 
-
 function sendMessage(){
-   const ccode=$('#country_list').get(0).value
-   const mobnumber=$('#inputMobNum').get(0).value
-   const message=$('#inputMessage').get(0).value
-   const href="https://api.whatsapp.com/send/?phone="+ccode+mobnumber+"&text="+message;
+   const ccode=$('#country_list').get(0).value;
+   const mobnumber=$('#inputMobNum').get(0).value;
+   const message=$('#inputMessage').get(0).value;
+   let fullnumber ='';
+   console.log(mobnumber.includes('+'))
+  if(mobnumber.includes('+')){
+    fullnumber=mobnumber;
+  }
+  else{
+    fullnumber=ccode+mobnumber
+  }
+   const href="https://api.whatsapp.com/send/?phone="+fullnumber+"&text="+message;
    window.location=href
 }
  
