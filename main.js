@@ -5,7 +5,6 @@ function sendMessage(){
    const mobnumber=$('#inputMobNum').get(0).value
    const message=$('#inputMessage').get(0).value
 //    const href="https://api.whatsapp.com/send/?phone="+ccode+mobnumber+"&text="+message
-  const href="https://www.google.com"
    window.location=href
 }
 
