@@ -249,12 +249,16 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="inputMobNum"> Enter 10 Digit Mobile Number</label>
-            <input oninput="sendMessage()" type="number" maxlength="" class="form-control"  id="inputMobNum" placeholder="Mobile Number">
+            <label for="inputMobNum"> Enter Mobile Number</label>
+            <input oninput="sendMessage()" type="number" class="form-control"  id="inputMobNum" placeholder="Mobile Number">
+            <small id="mobilenumberlength" class="text-muted">
+               
+              </small>
         </div>
         <div class="form-group">
             <label for="inputMessage"> Your Message (optional)</label>
             <input oninput="sendMessage()" type="text" class="form-control" id="inputMessage" placeholder="Your Message">
+   
         </div>
        
         <button class="btn btn-success"><a style="text-decoration: none;color: rgb(243, 235, 235);" href="">Send</a></button>
