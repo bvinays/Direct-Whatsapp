@@ -31,10 +31,10 @@
     <div class="container">
     <div class="row-fluid">
 <div class="col">
-    <form class="main-form">
+    <div class="main-form" >
         <div class="form-group">
             <label for="inputEmail">Country code </label>
-            <select name="countryCode" id="country_list">
+            <select class="form-control" id="country_list">
                 <option data-countryCode="GB" value="44">Norway (+47)</option>
                 <option data-countryCode="US" value="1">UK (+44)</option>
                 <optgroup label="Other countries">
@@ -257,21 +257,21 @@
         </div>
         <div class="form-group">
             <label for="inputMobNum"> Enter Mobile Number</label>
-            <input oninput="sendMessage()" type="number" class="form-control"  id="inputMobNum" placeholder="Mobile Number">
+            <input oninput="getDigits()" type="number" class="form-control"  id="inputMobNum" placeholder="Mobile Number">
             <small id="mobilenumberlength" class="text-muted">
                
               </small>
         </div>
         <div class="form-group">
             <label for="inputMessage"> Your Message (optional)</label>
-            <input oninput="sendMessage()" type="text" class="form-control" id="inputMessage" placeholder="Your Message">
+            <input  type="text" class="form-control" id="inputMessage" placeholder="Your Message">
    
         </div>
        
-        <button class="btn btn-success"><a style="text-decoration: none;color: rgb(243, 235, 235);" href="">Send</a></button>
+        <button onclick="sendMessage()" class="btn btn-success">Send</button>
         <button  onclick="resetform()" class="btn btn-primary">Clear</button>
 
-    </form>
+    </div>
 
 </div>
 
