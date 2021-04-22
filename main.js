@@ -6,7 +6,7 @@ function sendMessage(){
    const mobnumber=$('#inputMobNum').get(0).value
    const message=$('#inputMessage').get(0).value
    const href="https://web.whatsapp.com/send?phone="+ccode+mobnumber+"&text="+message
-   $('a').get(0).action=href
+   $('a').get(0).href=href
 }
 
 function resetform(){
